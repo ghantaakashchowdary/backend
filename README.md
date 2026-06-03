@@ -30,7 +30,7 @@ A scalable REST API built with Node.js, Express.js, MongoDB, JWT Authentication,
 Clone the repository:
 
 ```bash
-git clone YOUR_GITHUB_REPOSITORY_URL
+git clone https://github.com/ghantaakashchowdary/backend.git
 ```
 
 Install dependencies:
