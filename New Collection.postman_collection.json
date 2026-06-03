@@ -1,0 +1,296 @@
+{
+  "info": {
+    "_postman_id": "dea1ef6e-eb17-4c65-8d68-6ab5761a73e4",
+    "name": "New Collection",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+    "_exporter_id": "55438926",
+    "_collection_link": "https://go.postman.co/collection/55438926-dea1ef6e-eb17-4c65-8d68-6ab5761a73e4?source=collection_link"
+  },
+  "item": [
+    {
+      "name": "Backend Assignment APIs",
+      "item": [
+        {
+          "name": "https://backend-mn9y.onrender.com/api/tasks",
+          "request": {
+            "auth": {
+              "type": "bearer",
+              "bearer": [
+                {
+                  "key": "token",
+                  "value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjZhMWZiOGZjZGU2ZjQ2OGY0ZTg0NDE0ZSIsInJvbGUiOiJ1c2VyIiwiaWF0IjoxNzgwNDgwNTYyLCJleHAiOjE3ODA1NjY5NjJ9.IikN_H1xUm_SEsiMfeCPrX8Bmvvo7wQzFoAGlr0S-0o",
+                  "type": "string"
+                }
+              ]
+            },
+            "method": "POST",
+            "header": [],
+            "body": {
+              "mode": "raw",
+              "raw": "{\r\n  \"title\": \"Deploy Backend\",\r\n  \"description\": \"Deploy project to Render\"\r\n}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": {
+              "raw": "https://backend-mn9y.onrender.com/api/tasks",
+              "protocol": "https",
+              "host": [
+                "backend-mn9y",
+                "onrender",
+                "com"
+              ],
+              "path": [
+                "api",
+                "tasks"
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "https://backend-mn9y.onrender.com/api/auth/admin",
+          "request": {
+            "auth": {
+              "type": "bearer",
+              "bearer": [
+                {
+                  "key": "token",
+                  "value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjZhMWZiOGZjZGU2ZjQ2OGY0ZTg0NDE0ZSIsInJvbGUiOiJ1c2VyIiwiaWF0IjoxNzgwNDgxNDI4LCJleHAiOjE3ODA1Njc4Mjh9.89sJKMYywidvbo13dILuS0u_iHCp5vpNf50YAWThApA",
+                  "type": "string"
+                }
+              ]
+            },
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "https://backend-mn9y.onrender.com/api/auth/admin",
+              "protocol": "https",
+              "host": [
+                "backend-mn9y",
+                "onrender",
+                "com"
+              ],
+              "path": [
+                "api",
+                "auth",
+                "admin"
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "https://backend-mn9y.onrender.com/api/auth/login",
+          "request": {
+            "auth": {
+              "type": "noauth"
+            },
+            "method": "POST",
+            "header": [],
+            "body": {
+              "mode": "raw",
+              "raw": "{\r\n  \"email\": \"akashghanta22@gmail.com\",\r\n  \"password\": \"123456\"\r\n}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": {
+              "raw": "https://backend-mn9y.onrender.com/api/auth/login",
+              "protocol": "https",
+              "host": [
+                "backend-mn9y",
+                "onrender",
+                "com"
+              ],
+              "path": [
+                "api",
+                "auth",
+                "login"
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "https://backend-mn9y.onrender.com/api/auth/register",
+          "request": {
+            "auth": {
+              "type": "noauth"
+            },
+            "method": "POST",
+            "header": [],
+            "body": {
+              "mode": "raw",
+              "raw": "{\r\n  \"name\": \"Admin\",\r\n  \"email\": \"admin@test.com\",\r\n  \"password\": \"123456\",\r\n  \"role\": \"admin\"\r\n}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": {
+              "raw": "https://backend-mn9y.onrender.com/api/auth/register",
+              "protocol": "https",
+              "host": [
+                "backend-mn9y",
+                "onrender",
+                "com"
+              ],
+              "path": [
+                "api",
+                "auth",
+                "register"
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "http://localhost:5000/api/tasks/6a1fc80147d7e71e636fe236",
+          "request": {
+            "auth": {
+              "type": "bearer",
+              "bearer": [
+                {
+                  "key": "token",
+                  "value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjZhMWZiOGZjZGU2ZjQ2OGY0ZTg0NDE0ZSIsImlhdCI6MTc4MDQ2NzYzNywiZXhwIjoxNzgwNTU0MDM3fQ.gDmWz__NpwfDhnfnzob_Y2-INQUSvetPnfeWfub9-u4",
+                  "type": "string"
+                }
+              ]
+            },
+            "method": "DELETE",
+            "header": [],
+            "url": {
+              "raw": "http://localhost:5000/api/tasks/6a1fc80147d7e71e636fe236",
+              "protocol": "http",
+              "host": [
+                "localhost"
+              ],
+              "port": "5000",
+              "path": [
+                "api",
+                "tasks",
+                "6a1fc80147d7e71e636fe236"
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": " http://localhost:5000/api/tasks/6a1fc80147d7e71e636fe236",
+          "request": {
+            "auth": {
+              "type": "bearer",
+              "bearer": [
+                {
+                  "key": "token",
+                  "value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjZhMWZiOGZjZGU2ZjQ2OGY0ZTg0NDE0ZSIsImlhdCI6MTc4MDQ2NzYzNywiZXhwIjoxNzgwNTU0MDM3fQ.gDmWz__NpwfDhnfnzob_Y2-INQUSvetPnfeWfub9-u4",
+                  "type": "string"
+                }
+              ]
+            },
+            "method": "PUT",
+            "header": [],
+            "body": {
+              "mode": "raw",
+              "raw": "{\r\n  \"title\": \"Learn Express.js\",\r\n  \"status\": \"completed\"\r\n}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": {
+              "raw": "http://localhost:5000/api/tasks/6a1fc80147d7e71e636fe236",
+              "protocol": "http",
+              "host": [
+                "localhost"
+              ],
+              "port": "5000",
+              "path": [
+                "api",
+                "tasks",
+                "6a1fc80147d7e71e636fe236"
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": " http://localhost:5000/api/tasks",
+          "request": {
+            "auth": {
+              "type": "bearer",
+              "bearer": [
+                {
+                  "key": "token",
+                  "value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjZhMWZiOGZjZGU2ZjQ2OGY0ZTg0NDE0ZSIsImlhdCI6MTc4MDQ2NzYzNywiZXhwIjoxNzgwNTU0MDM3fQ.gDmWz__NpwfDhnfnzob_Y2-INQUSvetPnfeWfub9-u4",
+                  "type": "string"
+                }
+              ]
+            },
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "http://localhost:5000/api/tasks",
+              "protocol": "http",
+              "host": [
+                "localhost"
+              ],
+              "port": "5000",
+              "path": [
+                "api",
+                "tasks"
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "http://localhost:5000/api/tasks",
+          "request": {
+            "auth": {
+              "type": "bearer",
+              "bearer": [
+                {
+                  "key": "token",
+                  "value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjZhMWZiOGZjZGU2ZjQ2OGY0ZTg0NDE0ZSIsImlhdCI6MTc4MDQ2NzYzNywiZXhwIjoxNzgwNTU0MDM3fQ.gDmWz__NpwfDhnfnzob_Y2-INQUSvetPnfeWfub9-u4",
+                  "type": "string"
+                }
+              ]
+            },
+            "method": "POST",
+            "header": [],
+            "body": {
+              "mode": "raw",
+              "raw": "{\r\n  \"title\": \"Learn Node.js\",\r\n  \"description\": \"Complete task manager project\"\r\n}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": {
+              "raw": "http://localhost:5000/api/tasks",
+              "protocol": "http",
+              "host": [
+                "localhost"
+              ],
+              "port": "5000",
+              "path": [
+                "api",
+                "tasks"
+              ]
+            }
+          },
+          "response": []
+        }
+      ]
+    }
+  ]
+}
